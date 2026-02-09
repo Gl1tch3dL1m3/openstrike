@@ -1,3 +1,6 @@
+const max = 0;
+const current = 0;
+
 window.SetStatusChanged = function(status)
 {
     document.getElementById("loadingtext").innerHTML = status;
@@ -5,11 +8,11 @@ window.SetStatusChanged = function(status)
 
 window.SetFilesNeeded = function(needed)
 {
-    const e = document.getElementById("loadingbar");
-    e.value = e.max - needed;
+    current = max - needed
+    document.getElementById("loadingbar").style.width = current / max * 100;
 }
 
 window.SetFilesTotal = function(total)
 {
-    document.getElementById("loadingbar").max = total;
+    max = total
 }
