@@ -1,5 +1,5 @@
-const max = 0;
-const current = 0;
+var max = 0;
+var current = 0;
 
 window.SetStatusChanged = function(status)
 {
@@ -9,7 +9,7 @@ window.SetStatusChanged = function(status)
 window.SetFilesNeeded = function(needed)
 {
     current = max - needed
-    document.getElementById("loadingbar").style.width = current / max * 100;
+    document.getElementById("progress").style.width = current / max * 100 + "%";
 }
 
 window.SetFilesTotal = function(total)
