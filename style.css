@@ -22,6 +22,8 @@ body
     width: 90%;
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-top: 20px;
 }
 
 #loadingtext
@@ -30,7 +32,6 @@ body
     font-family: "Arial";
     font-weight: 600;
     position: absolute;
-    margin-top: 30px;
 }
 
 #openstrike
@@ -49,7 +50,6 @@ progress {
     width: 88%;
     height: 30px;
     padding: 3px;
-    margin-top: 20px;
 }
 
 progress::-moz-progress-bar, progress::-webkit-progress-bar, progress::-webkit-progress-value, progress:after
