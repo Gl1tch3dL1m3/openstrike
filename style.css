@@ -41,7 +41,7 @@ body
     margin-top: 70px;
 }
 
-#loadingbar {
+progress {
     display: flex;
     background-color: #00000096;
     border-color: #0094d8;
@@ -53,13 +53,10 @@ body
     padding: 3px;
 }
 
-#progress
+progress::-webkit-progress-bar, progress::-webkit-progress-value, progress::-moz-progress-bar
 {
-    display: block;
     background-color: #0094d8;
-    width: 0%;
-    height: 100%;
-    border-radius: 9px;
+    border-radius: 10px;
 }
 
 #content

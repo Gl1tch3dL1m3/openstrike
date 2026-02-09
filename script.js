@@ -8,11 +8,11 @@ window.SetStatusChanged = function(status)
 
 window.SetFilesNeeded = function(needed)
 {
-    current = max - needed
-    document.getElementById("progress").style.width = current / max * 100 + "%";
+    const e = document.getElementById("progress");
+    e.value = (e.max - needed) / e.max * 100;
 }
 
 window.SetFilesTotal = function(total)
 {
-    max = total
+    document.getElementById("progress").max = total;
 }
