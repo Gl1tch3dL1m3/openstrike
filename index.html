@@ -142,7 +142,7 @@
             window.SetFilesNeeded = function(needed)
             {
                 const current = max - needed;
-                document.getElementById("progress").style.width = current / max * 100 + "%";
+                document.getElementById("progress").style.width = (current / max) * 100 + "%";
             }
 
             window.SetFilesTotal = function(total)
