@@ -1,0 +1,219 @@
+<html>
+    <head>
+        <style>
+            body
+            {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: url("imgs/background.jpg");
+                background-size: cover;
+                height: 100dvh;
+            }
+
+            #container
+            {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                width: 1000px;
+                height: 685px;
+            }
+
+            #loading
+            {
+                width: 90%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            #loadingtext
+            {
+                color: white;
+                font-family: "Arial";
+                font-weight: 600;
+                position: absolute;
+            }
+
+            #openstrike
+            {
+                width: 300px;
+                height: 100px;
+                margin-top: 70px;
+            }
+
+            #loadingbar {
+                display: flex;
+                background-color: #00000096;
+                border-color: #0094d8;
+                border-radius: 13px;
+                border-style: solid;
+                border-width: 1px;
+                width: 88%;
+                height: 30px;
+                padding: 3px;
+            }
+
+            #progress
+            {
+                display: block;
+                background-color: #0094d8;
+                width: 0%;
+                height: 100%;
+                border-radius: 9px;
+            }
+
+            #content
+            {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                width: 80%;
+                height: 100%;
+                margin-top: 20px;
+                margin-bottom: 70px;
+                border-radius: 10px;
+            }
+
+            #rules, #tips
+            {
+                background-color: #00000096;
+                border-style: solid;
+                border-color: #0094d8;
+                border-width: 2px;
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+            }
+
+            #rules > h3, #tips > h3
+            {
+                color: #0094d8;
+                text-align: center;
+                font-family: "Arial";
+            }
+
+            #list
+            {
+                display: flex;
+                flex-direction: column;
+                margin: 0 20px;
+                gap: 10px;
+            }
+
+            #list > div
+            {
+                display: flex;
+                align-items: center;
+                background-color: #3d3d3d;
+                padding-left: 10px;
+                border-radius: 10px;
+            }
+
+            #list > div > a
+            {
+                font-family: "Arial";
+                font-weight: 1000;
+                color: white;
+                background-color: #0094d8;
+                border-radius: 30px;
+                padding: 10px;
+                position: relative;
+                text-align: center;
+            }
+
+            #list > div > p
+            {
+                font-family: "Arial";
+                color: white;
+                margin-left: 10px;
+            }
+        </style>
+        <script>
+            var max = 0;
+
+            window.SetStatusChanged = function(status)
+            {
+                document.getElementById("loadingtext").innerHTML = status;
+            }
+
+            window.SetFilesNeeded = function(needed)
+            {
+                const current = max - needed;
+                document.getElementById("progress").style.width = current / max * 100 + "%";
+            }
+
+            window.SetFilesTotal = function(total)
+            {
+                max = total;
+            }
+        </script>
+    </head>
+
+    <body>
+        <div id="container">
+            <img id="openstrike" src="imgs/logo.png">
+            <div id="loading">
+                <div id="loadingbar">
+                    <div id="progress"></div>
+                </div>
+                <a id="loadingtext"></a>
+            </div>
+            
+            <div id="content">
+                <div id="rules">
+                    <h3>RULES</h3>
+                    <div id="list">
+                        <div>
+                            <a>1</a>
+                            <p>No cheating!</p>
+                        </div>
+                        <div>
+                            <a>2</a>
+                            <p>No opposite teaming!</p>
+                        </div>
+                        <div>
+                            <a>3</a>
+                            <p>Don't troll chat and voice chat!</p>
+                        </div>
+                        <div>
+                            <a>4</a>
+                            <p>Don't start wars. Be respectful!</p>
+                        </div>
+                        <div>
+                            <a>5</a>
+                            <p>No links or IP addresses!</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tips">
+                    <h3>TIPS</h3>
+                    <div id="list">
+                        <div>
+                            <a>1</a>
+                            <p>After jumping, hold SHIFT for jump boost!</p>
+                        </div>
+                        <div>
+                            <a>2</a>
+                            <p>Your footsteps are silent while crouching!</p>
+                        </div>
+                        <div>
+                            <a>3</a>
+                            <p>Read the text on the wall in the lobby!</p>
+                        </div>
+                        <div>
+                            <a>4</a>
+                            <p>Add us to your favourite servers!</p>
+                        </div>
+                        <div>
+                            <a>5</a>
+                            <p>Join our Discord!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
