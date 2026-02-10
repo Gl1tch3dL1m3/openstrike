@@ -16,8 +16,7 @@ window.SetFilesTotal = function(total)
     max = total;
 }
 
-window.DownloadingFile = function(file)
+setInterval(1000, function()
 {
     document.getElementById("progress").style.width = current / max * 100 + "%";
-    console.log(current);
-}
+})
