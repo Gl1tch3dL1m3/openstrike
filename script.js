@@ -14,6 +14,7 @@ window.SetFilesNeeded = function(needed)
 window.DownloadingFile = function(file)
 {
     document.getElementById("progress").style.width = current / max * 100 + "%";
+    document.getElementById("progress").style.width = "50%";
     current += 1;
 }
 
