@@ -134,7 +134,6 @@
         <script>
             var max = 0;
             var current = 0;
-            var _needed = 0;
 
             window.SetStatusChanged = function(status)
             {
@@ -145,26 +144,19 @@
                 }
                 else
                 {
-                    document.getElementById("loadingtext").innerHTML = `Max: ${max} Needed: ${_needed} Current: ${current}`;
+                    document.getElementById("loadingtext").innerHTML = `Max: ${max} Current: ${current}`;
                 }
             }
 
-            
             window.SetFilesNeeded = function(needed)
             {
-                _needed = needed;
-                
+                max = needed;
             }
             
             window.DownloadingFile = function(file)
             {
                 current += 1;
                 //document.getElementById("progress").style.width = (current / max) * 100 + "%";
-            }
-
-            window.SetFilesTotal = function(total)
-            {
-                max = total;
             }
         </script>
     </head>
