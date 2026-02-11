@@ -133,15 +133,27 @@
         </style>
         <script>
             var max = 0;
+            var current = 0;
 
             window.SetStatusChanged = function(status)
             {
                 document.getElementById("loadingtext").innerHTML = status;
+                if (!status.endsWith("downloading"))
+                {
+                    document.getElementById("progress").style.width = "100%";
+                }
             }
 
+            /*
             window.SetFilesNeeded = function(needed)
             {
                 const current = max - needed;
+                
+            }
+            */
+            window.DownloadingFile = function(file)
+            {
+                current += 1;
                 document.getElementById("progress").style.width = (current / max) * 100 + "%";
             }
 
