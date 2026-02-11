@@ -142,6 +142,10 @@
                 {
                     document.getElementById("progress").style.width = "100%";
                 }
+                else
+                {
+                    document.getElementById("loadingtext").innerHTML = `Max: ${max} Current: ${current}`;
+                }
             }
 
             /*
@@ -154,7 +158,7 @@
             window.DownloadingFile = function(file)
             {
                 current += 1;
-                document.getElementById("progress").style.width = (current / max) * 100 + "%";
+                //document.getElementById("progress").style.width = (current / max) * 100 + "%";
             }
 
             window.SetFilesTotal = function(total)
