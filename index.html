@@ -142,10 +142,6 @@
                 {
                     document.getElementById("progress").style.width = "100%";
                 }
-                else
-                {
-                    document.getElementById("loadingtext").innerHTML = `Max: ${max} Current: ${current}`;
-                }
             }
 
             window.SetFilesNeeded = function(needed)
@@ -156,7 +152,7 @@
             window.DownloadingFile = function(file)
             {
                 current += 1;
-                //document.getElementById("progress").style.width = (current / max) * 100 + "%";
+                document.getElementById("progress").style.width = (current / max) * 100 + "%";
             }
         </script>
     </head>
