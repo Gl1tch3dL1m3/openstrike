@@ -132,28 +132,21 @@
             }
         </style>
         <script>
-            var max = 0;
-
             window.SetStatusChanged = function(status)
             {
                 document.getElementById("loadingtext").innerHTML = status;
-                if (!status.endsWith("downloading"))
+
+                try
+                {
+                    const val = status.split("/");
+                    const num = parseInt(val[0]);
+                    const max = parseInt(val[1].split(" ")[0]);
+
+                    document.getElementById("progress").style.width = (parseInt(val[0]) / max) * 100 + "%";
+                } catch(e)
                 {
                     document.getElementById("progress").style.width = "100%";
                 }
-
-                else
-                {
-                    const val = status.split("/");
-
-                    if (max == 0)
-                    {
-                        max = parseInt(val[1].split(" ")[0]);
-                    }
-
-                    document.getElementById("progress").style.width = (parseInt(val[0]) / max) * 100 + "%";
-                }
-                
             }
         </script>
     </head>
