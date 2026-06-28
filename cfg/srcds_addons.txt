@@ -1,0 +1,78 @@
+"srcds_addons"
+{
+	"547635114"
+	{
+		"name"		"CSS Grenades"
+		"path"		"/home/glitchedlime/OPENSTRIKE/steam_cache/content/4000/547635114/400053111074127997_legacy.bin"
+	}
+	"2180833718"
+	{
+		"name"		"CS:GO Weapons"
+		"path"		"/home/glitchedlime/OPENSTRIKE/steam_cache/content/4000/2180833718"
+	}
+	"2185719675"
+	{
+		"name"		"CS:GO Knives"
+		"path"		"/home/glitchedlime/OPENSTRIKE/steam_cache/content/4000/2185719675"
+	}
+	"3654812588"
+	{
+		"name"		"OpenStrike"
+		"path"		"/home/glitchedlime/OPENSTRIKE/steam_cache/content/4000/3654812588"
+	}
+	"3628031386"
+	{
+		"name"		"Office Preincident"
+		"path"		"/home/glitchedlime/OPENSTRIKE/steam_cache/content/4000/3628031386"
+	}
+	"3624574621"
+	{
+		"name"		"gm_firing_range"
+		"path"		"/home/glitchedlime/OPENSTRIKE/steam_cache/content/4000/3624574621"
+	}
+	"2114475699"
+	{
+		"name"		"Dust2 without CSS content"
+		"path"		"/home/glitchedlime/OPENSTRIKE/steam_cache/content/4000/2114475699"
+	}
+	"357662134"
+	{
+		"name"		"cs_assault from CS 1.6"
+		"path"		"/home/glitchedlime/OPENSTRIKE/steam_cache/content/4000/357662134/528418381444758180_legacy.bin"
+	}
+	"3636489268"
+	{
+		"name"		"Chateau Extended"
+		"path"		"/home/glitchedlime/OPENSTRIKE/steam_cache/content/4000/3636489268"
+	}
+	"1165152208"
+	{
+		"name"		"cs_jungle"
+		"path"		"/home/glitchedlime/OPENSTRIKE/steam_cache/content/4000/1165152208/863987806120846289_legacy.bin"
+	}
+	"1807067202"
+	{
+		"name"		"CS:S Tuscan"
+		"path"		"/home/glitchedlime/OPENSTRIKE/steam_cache/content/4000/1807067202/775100200389844284_legacy.bin"
+	}
+	"3237087610"
+	{
+		"name"		"cs_downed_css_b2"
+		"path"		"/home/glitchedlime/OPENSTRIKE/steam_cache/content/4000/3237087610"
+	}
+	"2041646618"
+	{
+		"name"		"de_mirage from Counter Strike Source (CSS)"
+		"path"		"/home/glitchedlime/OPENSTRIKE/steam_cache/content/4000/2041646618"
+	}
+	"2407547147"
+	{
+		"name"		"de_airstrip_css"
+		"path"		"/home/glitchedlime/OPENSTRIKE/steam_cache/content/4000/2407547147"
+	}
+	"1983655010"
+	{
+		"name"		"gm_lobby"
+		"path"		"/home/glitchedlime/OPENSTRIKE/steam_cache/content/4000/1983655010"
+	}
+}
