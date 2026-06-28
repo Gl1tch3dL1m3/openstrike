@@ -1,0 +1,7 @@
+"openstrike"
+{
+    "base"          "base"
+	"title"		    "OpenStrike"
+	"category"	    "pvp"
+	"menusystem"	"1"
+}
